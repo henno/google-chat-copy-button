@@ -1,0 +1,16 @@
+{
+  "name": "google-chat-copy-button",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Copy Google Chat messages as Markdown, independently of the interface language.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "check": "npm test && npm run build",
+    "package": "npm run check && node scripts/package.mjs"
+  },
+  "dependencies": { "turndown": "7.2.0" },
+  "devDependencies": { "esbuild": "0.25.12", "jsdom": "26.1.0" }
+}

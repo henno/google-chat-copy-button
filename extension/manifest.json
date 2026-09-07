@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Google Chat Markdown Copy",
+  "version": "1.0.0",
+  "description": "Copy an entire Google Chat message as Markdown with one click. Works independently of the interface language.",
+  "homepage_url": "https://github.com/henno/google-chat-copy-button",
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [{
+    "matches": ["https://chat.google.com/*"],
+    "all_frames": true,
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }],
+  "icons": {"16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png"}
+}
