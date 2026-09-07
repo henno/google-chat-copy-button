@@ -1,0 +1,26 @@
+.gcm-copy-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0 8px;
+  font: 12px/1.4 system-ui, sans-serif;
+  color: inherit;
+}
+.gcm-copy-button {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1.4;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  padding: 4px 9px;
+  opacity: .75;
+}
+.gcm-copy-button:hover, .gcm-copy-button:focus-visible { opacity: 1; }
+.gcm-copy-button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.gcm-copy-button:disabled { cursor: wait; }
+.gcm-copy-button[data-state="success"] { opacity: 1; font-weight: 600; }
+.gcm-copy-button[data-state="error"] { opacity: 1; text-decoration: underline; }
+.gcm-copy-status { font: inherit; }
